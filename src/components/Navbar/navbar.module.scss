@@ -1,0 +1,19 @@
+@import '../../styles/colors.scss';
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 30px;
+  margin-right: 10px;
+}

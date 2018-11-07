@@ -1,2 +1,2 @@
-require('./src/styles/index.scss');
-require('./src/fonts/fonts.scss');
+require('./src/styles/main.scss');
+require('typeface-nunito');

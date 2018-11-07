@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import Header from '../components/header';
-import Layout from '../components/layout';
+import Header from '../components/Header';
+import Layout from '../components/Layout';
 
 export default () => (
   <Layout>
-    <Link to="/">Home</Link>
     <Header headerText="Contact" />
-    <p>Get a quote</p>
+    <main>
+      <p>Let's build something great together.</p>
+    </main>
   </Layout>
 );
