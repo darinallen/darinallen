@@ -1,3 +1,22 @@
 .header {
-  font-size: 24px;
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(68, 0, 255, 0.801), rgba(97, 193, 248, 0.801)),
+    url('./product.jpeg');
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+}
+
+.logo {
+  width: 300px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.title {
+  color: white;
+  margin-left: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 300;
+  letter-spacing: 6px;
 }
