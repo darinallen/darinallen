@@ -1,22 +1,39 @@
+@import '../../styles/variables';
+@import '../../styles/base/animations';
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(68, 0, 255, 0.801), rgba(97, 193, 248, 0.801)),
+  background-image: linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-secondary, 0.8)),
     url('./product.jpeg');
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  position: relative;
+}
+
+.logoBox {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
 }
 
 .logo {
-  width: 300px;
-  margin-top: 15px;
-  margin-left: 15px;
+  height: 5rem;
 }
 
 .title {
-  color: white;
-  margin-left: 15px;
+  text-align: center;
+  font-size: $default-font-size;
+  color: $white;
   font-family: 'Courier New', Courier, monospace;
-  font-weight: 300;
-  letter-spacing: 6px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.textBox {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }

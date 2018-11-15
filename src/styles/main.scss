@@ -1,23 +1,7 @@
-@import './colors.scss';
-
-html {
-  box-sizing: border-box;
-  font-size: 10px;
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-    padding: 0;
-    margin: 0;
-  }
-  body {
-    font-family: 'Nunito', sans-serif;
-    color: $black;
-    font-size: 1.8rem;
-    padding: 30px;
-  }
-  a {
-    text-decoration: none;
-    color: $black;
-  }
-}
+@import 'mixins';
+@import 'variables';
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+@import 'grid';

@@ -1,12 +1,10 @@
 import React from 'react';
 import Header from '../components/Header';
-import styles from './index.module.scss';
+import Main from '../components/Main';
 
 export default () => (
   <div>
     <Header />
-    <main className={styles.content}>
-      <p>Website Development Services</p>
-    </main>
+    <Main />
   </div>
 );
