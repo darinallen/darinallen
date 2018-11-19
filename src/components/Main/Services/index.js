@@ -16,8 +16,7 @@ const advanced = [
   'Google Analytics setup',
   'Web marketing strategy',
   'Social marketing plan',
-  'Performance Reporting',
-  ''
+  'Performance Reporting'
 ];
 
 const premium = [
