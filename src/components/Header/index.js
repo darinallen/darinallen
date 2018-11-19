@@ -16,7 +16,7 @@ export default props => (
         <span className="heading-primary-sub">to ignite your business</span>
       </h1>
 
-      <ButtonRound text="Let's build something" white animated />
+      <ButtonRound text="Let's build something amazing" white animated />
     </div>
   </header>
 );

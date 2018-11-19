@@ -27,6 +27,11 @@
   color: $grey;
 }
 
+.blue {
+  background-color: $color-primary;
+  color: $white;
+}
+
 .btn::after {
   content: '';
   display: inline-block;
@@ -42,6 +47,10 @@
 
 .white::after {
   background-color: $white;
+}
+
+.blue::after {
+  background-color: $color-primary;
 }
 
 .btn:hover::after {

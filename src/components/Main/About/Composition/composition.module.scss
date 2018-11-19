@@ -1,0 +1,42 @@
+@import '../../../../styles/variables';
+
+.composition {
+  position: relative;
+}
+
+.photo {
+  filter: drop-shadow(1.2rem 1.2rem 2.5rem rgba($black, 0.4));
+  border-radius: 2px;
+  position: absolute;
+  transition: all 0.2s;
+  outline-offset: 2rem;
+}
+
+.photo:hover {
+  outline: 1.5rem solid $color-primary;
+  transform: scale(1.05) translateY(-0.5rem);
+  filter: drop-shadow(1.5rem 1.5rem 2.5rem rgba($black, 0.5));
+  z-index: 11;
+}
+
+.composition:hover .photo:not(:hover) {
+  transform: scale(0.95);
+}
+
+.photo1 {
+  width: 55%;
+  right: 15rem;
+  top: -2rem;
+}
+
+.photo2 {
+  width: 55%;
+  left: 5rem;
+  top: 8rem;
+}
+
+.photo3 {
+  width: 23%;
+  left: 0;
+  top: 0;
+}

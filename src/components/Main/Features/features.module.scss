@@ -1,0 +1,15 @@
+@import '../../../styles/variables';
+
+.features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba($color-primary-dark, 0.8), rgba($color-primary-light, 0.8)),
+    url('./business.jpeg');
+  background-size: cover;
+  background-position: center;
+  transform: skewY(-3.2deg);
+  margin-top: -5rem;
+}
+
+.features > * {
+  transform: skewY(4deg);
+}
