@@ -1,0 +1,124 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.quote {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary-light);
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}
+
+.quoteInner {
+  background-image: linear-gradient(105deg, rgba($white, 0.9) 0%, rgba($white, 0.9) 50%, transparent 50%),
+    url('./charts.jpg');
+  background-size: 100%; // means the same thing as 'cover'
+  background-position: center;
+  height: 52rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($black, 0.2);
+}
+
+.formContainer {
+  width: 50%;
+  padding: 6rem;
+}
+
+.form {
+  // font-size: 1.6rem;
+  // line-height: normal;
+}
+
+.group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba($white, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  transition: all 0.3s;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba($black, 0.1);
+  border-bottom: 3px solid $color-primary;
+}
+
+.input:focus:invalid {
+  border-bottom: 3px solid $color-secondary-dark;
+}
+
+.input::-webkit-input-placeholder {
+  color: $grey-2;
+}
+
+.label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+.input:placeholder-shown + .label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
+.radioGroup {
+  width: 50%;
+  display: inline-block;
+}
+
+.radioInput {
+  display: none;
+}
+
+.radioLabel {
+  font-size: $default-font-size;
+  cursor: pointer;
+  position: relative;
+  padding-left: 5rem;
+}
+
+.radioButton {
+  height: 3rem;
+  width: 3rem;
+  border: 5px solid $color-primary;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -0.4rem;
+}
+
+.radioButton::after {
+  content: '';
+  display: block;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $color-primary;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.radioInput:checked + .radioLabel .radioButton::after {
+  opacity: 1;
+}

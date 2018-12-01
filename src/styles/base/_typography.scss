@@ -14,6 +14,12 @@
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+
+  @include respond(phone) {
+    letter-spacing: 1rem;
+    margin-left: 1rem;
+    font-size: 5rem;
+  }
 }
 
 .heading-primary-sub {
@@ -25,6 +31,11 @@
   animation-name: moveInRight;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+
+  @include respond(phone) {
+    letter-spacing: 0.25rem;
+    margin-left: 0.25rem;
+  }
 }
 
 // Linear gradient combined with background-clip and color transparent to get cool text effect
@@ -40,6 +51,14 @@
   letter-spacing: 0.2rem;
   margin-left: 0.2rem;
   transition: all 0.2s;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 }
 .heading-secondary:hover {
   transform: skewY(2deg) skewX(15deg) scale(1.1);

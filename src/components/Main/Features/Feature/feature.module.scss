@@ -1,4 +1,5 @@
 @import '../../../../styles/variables';
+@import '../../../../styles/mixins';
 
 .box {
   background-color: rgba($white, 0.8);
@@ -8,6 +9,10 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($black, 0.15);
   transition: transform 0.3s;
+
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
 }
 
 .box:hover {
@@ -22,4 +27,8 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+
+  @include respond(tab-port) {
+    margin-bottom: 0;
+  }
 }

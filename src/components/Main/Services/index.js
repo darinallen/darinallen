@@ -28,7 +28,7 @@ const premium = [
 ];
 
 const Services = () => (
-  <section className={styles.services}>
+  <section className={styles.services} id="services">
     <div className="u-center-text u-margin-bottom-large">
       <h2 className="heading-secondary">Consulting Services</h2>
     </div>
@@ -68,7 +68,7 @@ const Services = () => (
       </div>
     </div>
     <div className={`u-margin-top-huge ${styles.btnContainer}`}>
-      <ButtonRound text="Learn More" blue animated />
+      <ButtonRound link="#features" text="Learn More" blue animated />
     </div>
   </section>
 );

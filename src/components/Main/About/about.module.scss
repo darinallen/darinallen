@@ -1,7 +1,12 @@
 @import '../../../styles/variables';
+@import '../../../styles/mixins';
 
 .about {
   background-color: $grey-light-1;
   padding: 20rem 0 25rem 0;
   margin-top: -10vh;
+
+  @include respond(tab-port) {
+    padding: 15rem 0 20rem 0;
+  }
 }

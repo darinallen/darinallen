@@ -1,6 +1,7 @@
 @import '../../../../styles/variables';
 @import '../../../../styles/base/animations';
 
+.btn,
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -10,6 +11,10 @@
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
+  border: none;
+  cursor: pointer;
+  line-height: normal;
+  font-size: $default-font-size;
 }
 
 .btn:hover {
@@ -17,7 +22,9 @@
   box-shadow: 0 1rem 2rem rgba($black, 0.2);
 }
 
-.btn:active {
+.btn:active,
+.btn:focus {
+  outline: none;
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba($black, 0.2);
 }

@@ -4,7 +4,7 @@ import Composition from './Composition';
 import styles from './about.module.scss';
 
 const About = () => (
-  <section className={styles.about}>
+  <section className={styles.about} id="about">
     <div className="u-center-text u-margin-bottom-large">
       <h2 className="heading-secondary">Business-Minded Web Development</h2>
     </div>
@@ -22,7 +22,7 @@ const About = () => (
           Quiz to see if you're hitting the mark.
         </p>
 
-        <ButtonText text="Learn more &rarr;" />
+        <ButtonText link="#features" text="Learn more &rarr;" />
       </div>
       <div className="col-1-of-2">
         <Composition />

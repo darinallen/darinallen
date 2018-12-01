@@ -1,4 +1,5 @@
 @import '../../../styles/variables';
+@import '../../../styles/mixins';
 
 .features {
   padding: 20rem 0;
@@ -6,10 +7,19 @@
     url('./business.jpeg');
   background-size: cover;
   background-position: center;
-  transform: skewY(-3.2deg);
+  transform: skewY(-4deg);
   margin-top: -5rem;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+    transform: skewY(-7deg);
+  }
 }
 
 .features > * {
   transform: skewY(4deg);
+
+  @include respond(tab-port) {
+    transform: skewY(7deg);
+  }
 }

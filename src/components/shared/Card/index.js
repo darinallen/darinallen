@@ -25,7 +25,7 @@ const Card = ({ colorClass, imageClass, heading, list, ctaLabel, ctaDescription,
           <p className={styles.ctaLabel}>{ctaLabel}</p>
           <p className={styles.ctaDescription}>{ctaDescription}</p>
         </div>
-        <ButtonRound text={btnText} white animated />
+        <ButtonRound link="#popup" text={btnText} white animated />
       </div>
     </div>
   </div>
