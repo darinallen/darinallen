@@ -15,14 +15,31 @@
     url('./charts.jpg');
   background-size: 100%; // means the same thing as 'cover'
   background-position: center;
-  height: 52rem;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($black, 0.2);
+
+  @include respond(tab-land) {
+    background-image: linear-gradient(105deg, rgba($white, 0.9) 0%, rgba($white, 0.9) 65%, transparent 65%),
+      url('./charts.jpg');
+    background-size: cover;
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(to right, rgba($white, 0.9) 0%, rgba($white, 0.9) 100%), url('./charts.jpg');
+  }
 }
 
 .formContainer {
   width: 50%;
   padding: 6rem;
+
+  @include respond(tab-land) {
+    width: 65%;
+  }
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
 }
 
 .form {
@@ -46,6 +63,10 @@
   width: 90%;
   display: block;
   transition: all 0.3s;
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
 }
 
 .input:focus {
@@ -80,6 +101,11 @@
 .radioGroup {
   width: 50%;
   display: inline-block;
+
+  @include respond(tab-port) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 
 .radioInput {
