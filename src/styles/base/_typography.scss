@@ -9,8 +9,8 @@
   display: block;
   font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 3.5rem;
-  margin-left: 3.5rem;
+  letter-spacing: 2rem;
+  margin-left: 2rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -32,9 +32,14 @@
   animation-duration: 1s;
   animation-timing-function: ease-out;
 
+  @include respond(tab-port) {
+    letter-spacing: 1.2rem;
+    margin-left: 1.2rem;
+  }
+
   @include respond(phone) {
-    letter-spacing: 0.25rem;
-    margin-left: 0.25rem;
+    letter-spacing: 0.53rem;
+    margin-left: 0.53rem;
   }
 }
 

@@ -21,8 +21,8 @@ const advanced = [
 
 const premium = [
   'Advanced Tier plus...',
-  'Fully custom designs',
-  'Custom feature development',
+  'Custom designs',
+  'Custom features',
   'Copywriting review',
   'Digital ad strategy'
 ];

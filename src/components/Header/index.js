@@ -17,8 +17,8 @@ export default props => (
 
     <div className={styles.textBox}>
       <h1 className="heading-primary">
-        <span className="heading-primary-main">Websites</span>
-        <span className="heading-primary-sub">to ignite your business</span>
+        <span className="heading-primary-main">Darin Allen</span>
+        <span className="heading-primary-sub">Full-stack Web Developer</span>
       </h1>
 
       <ButtonRound link="#services" text="Let's build something cool" white animated />
