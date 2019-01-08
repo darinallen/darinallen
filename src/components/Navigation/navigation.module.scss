@@ -103,10 +103,6 @@
 }
 
 // FUNCTIONALITY
-.closed {
-  z-index: 0;
-}
-
 .open {
   transform: scale(80);
 }
@@ -114,6 +110,10 @@
 .visible {
   opacity: 1;
   width: 100%;
+}
+
+.coverLinks {
+  z-index: 0;
 }
 
 // ICON
