@@ -3,6 +3,10 @@
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
+
+  @include respond(phone) {
+    margin-bottom: 5rem;
+  }
 }
 
 .heading-primary-main {
@@ -18,7 +22,7 @@
   @include respond(phone) {
     letter-spacing: 1rem;
     margin-left: 1rem;
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
@@ -38,8 +42,9 @@
   }
 
   @include respond(phone) {
-    letter-spacing: 0.53rem;
-    margin-left: 0.53rem;
+    letter-spacing: 0.56rem;
+    margin-left: 0.56rem;
+    font-size: 1.5rem;
   }
 }
 

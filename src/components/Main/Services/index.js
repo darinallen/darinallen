@@ -3,13 +3,7 @@ import Card from '../../shared/Card';
 import ButtonRound from '../../shared/buttons/ButtonRound';
 import styles from './services.module.scss';
 
-const foundational = [
-  'WordPress design theme',
-  'Easy-to-use CMS',
-  'Responsive layout',
-  'Search Engine Optimization',
-  'Cross-browser support'
-];
+const foundational = ['WordPress theme', 'Easy-to-use CMS', 'Responsive layout', 'SEO', 'Cross-browser support'];
 
 const advanced = [
   'Foundational Tier plus...',

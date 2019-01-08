@@ -4,10 +4,6 @@
 .navigation {
 }
 
-.checkbox {
-  display: none;
-}
-
 .button {
   background-color: $white;
   height: 7rem;
@@ -107,11 +103,15 @@
 }
 
 // FUNCTIONALITY
-.checkbox:checked ~ .background {
+.closed {
+  z-index: 0;
+}
+
+.open {
   transform: scale(80);
 }
 
-.checkbox:checked ~ .nav {
+.visible {
   opacity: 1;
   width: 100%;
 }
@@ -147,24 +147,24 @@
   top: 0.8rem;
 }
 
-.button:hover .icon::before {
+.spread:hover .icon::before {
   top: -1rem;
 }
 
-.button:hover .icon::after {
+.spread:hover .icon::after {
   top: 1rem;
 }
 
-.checkbox:checked + .button .icon {
+.iconOpen {
   background-color: transparent;
 }
 
-.checkbox:checked + .button .icon::before {
+.iconOpen::before {
   top: 0;
   transform: rotate(135deg);
 }
 
-.checkbox:checked + .button .icon::after {
+.iconOpen::after {
   top: 0;
   transform: rotate(-135deg);
 }
