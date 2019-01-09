@@ -14,8 +14,12 @@ class Navigation extends React.Component {
 
   closeMenu = () => {
     const _this = this;
+    const { open } = this.state;
     // Once the animation is complete (800ms), remove the z-index to make nav items unclickable
-    setTimeout(() => _this.setState({ linksUnclickable: true }), 800);
+    setTimeout(() => {
+      // Check if open to avoid setTimeout/setState issues when user clicks on icon in rapid succession
+      if (!open) _this.setState({ linksUnclickable: true });
+    }, 800);
     this.setState({ open: false });
   };
 
@@ -31,7 +35,7 @@ class Navigation extends React.Component {
         </div>
         <nav className={`${styles.nav} ${open && styles.visible} ${linksUnclickable && styles.coverLinks}`}>
           <ul className={styles.list}>
-            <NavItem link="#about" num="01" label="About Darin" closeMenu={this.closeMenu} />
+            <NavItem link="#about" num="01" label="About me" closeMenu={this.closeMenu} />
             <NavItem link="#features" num="02" label="Web development" closeMenu={this.closeMenu} />
             <NavItem link="#services" num="03" label="Consuting services" closeMenu={this.closeMenu} />
             <NavItem link="#stories" num="04" label="Stories" closeMenu={this.closeMenu} />
