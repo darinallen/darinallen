@@ -14,27 +14,27 @@ const Footer = () => (
           <ul className={styles.list}>
             <li className={styles.item}>
               <a href="#" className={styles.link}>
-                Company
+                GitHub
               </a>
             </li>
             <li className={styles.item}>
               <a href="#" className={styles.link}>
-                Contact us
+                Twitter
               </a>
             </li>
             <li className={styles.item}>
               <a href="#" className={styles.link}>
-                Careers
+                LinkedIn
               </a>
             </li>
             <li className={styles.item}>
               <a href="#" className={styles.link}>
-                Privacy policy
+                Blog
               </a>
             </li>
             <li className={styles.item}>
               <a href="#" className={styles.link}>
-                Terms
+                Contact
               </a>
             </li>
           </ul>
