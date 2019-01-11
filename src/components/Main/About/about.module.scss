@@ -10,3 +10,26 @@
     padding: 15rem 0 20rem 0;
   }
 }
+
+.row {
+  display: flex;
+  justify-content: center;
+  max-width: 114rem;
+  margin: 0 5rem;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+}
+
+.circleImageContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5rem;
+
+  @include respond(tab-port) {
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-right: 0;
+  }
+}
