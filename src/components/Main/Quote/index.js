@@ -42,7 +42,9 @@ const Stories = () => (
               </div>
             </div>
             <div className={styles.group}>
-              <ButtonRound el="button" text="Next step &rarr;" btn blue />
+              <ButtonRound el="button" primary animated>
+                Next step &rarr;
+              </ButtonRound>
             </div>
           </form>
         </div>

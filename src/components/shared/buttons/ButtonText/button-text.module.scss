@@ -1,24 +1,52 @@
 @import '../../../../styles/variables';
 
-.btnText:link,
-.btnText:visited {
-  font-size: $default-font-size;
-  color: $color-primary;
+.btn:link,
+.btn:visited {
+  text-align: center;
+  width: 16rem;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid $color-primary;
   padding: 3px;
   transition: all 0.2s;
 }
 
-.btnText:hover {
+.primary {
+  color: $color-primary;
+  border: 1px solid $color-primary;
+}
+
+.primary:hover {
   background-color: $color-primary;
   color: $white;
   box-shadow: 0 1rem 2rem rgba($black, 0.15);
   transform: translateY(-2px);
 }
 
-.btnText:active {
+.secondary {
+  color: $color-secondary-dark;
+  border: 1px solid $color-secondary-dark;
+}
+
+.secondary:hover {
+  background-color: $color-secondary-dark;
+  color: $white;
+  box-shadow: 0 1rem 2rem rgba($black, 0.15);
+  transform: translateY(-2px);
+}
+
+.tertiary {
+  color: $color-tertiary-dark;
+  border: 1px solid $color-tertiary-dark;
+}
+
+.tertiary:hover {
+  background-color: $color-tertiary-dark;
+  color: $white;
+  box-shadow: 0 1rem 2rem rgba($black, 0.15);
+  transform: translateY(-2px);
+}
+
+.btn:active {
   box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
   transform: translateY(0);
 }

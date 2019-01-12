@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './button-round.module.scss';
 
-const ButtonRound = ({ el, text, link = '#', ...btnStyles }) => {
+const ButtonRound = ({ el, link = '#', children, ...btnStyles }) => {
   let classes = `${styles.btn}`;
 
   for (let key in btnStyles) {
@@ -10,11 +10,11 @@ const ButtonRound = ({ el, text, link = '#', ...btnStyles }) => {
 
   return el === 'button' ? (
     <button href={link} className={classes}>
-      {text}
+      {children}
     </button>
   ) : (
     <a href={link} className={classes}>
-      {text}
+      {children}
     </a>
   );
 };

@@ -34,8 +34,18 @@
   color: $grey;
 }
 
-.blue {
+.primary {
   background-color: $color-primary;
+  color: $white;
+}
+
+.secondary {
+  background-color: $color-secondary-dark;
+  color: $white;
+}
+
+.tertiary {
+  background-color: $color-tertiary-dark;
   color: $white;
 }
 
@@ -56,8 +66,16 @@
   background-color: $white;
 }
 
-.blue::after {
+.primary::after {
   background-color: $color-primary;
+}
+
+.secondary::after {
+  background-color: $color-secondary-dark;
+}
+
+.tertiary::after {
+  background-color: $color-tertiary-dark;
 }
 
 .btn:hover::after {

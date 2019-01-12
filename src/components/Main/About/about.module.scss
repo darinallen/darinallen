@@ -33,3 +33,19 @@
     margin-right: 0;
   }
 }
+
+.btnContainer {
+  display: flex;
+  justify-content: space-around;
+
+  @include respond(tab-port) {
+    font-size: 2rem;
+  }
+
+  @include respond(phone) {
+    height: 16rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

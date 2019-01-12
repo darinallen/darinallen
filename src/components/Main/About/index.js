@@ -15,23 +15,33 @@ const About = () => (
       <div className={styles.text}>
         <h3 className="heading-tertiary u-margin-bottom-small">Web developer</h3>
         <p className="paragraph">
-          I build websites using full-stack JavaScript, CSS, and other modern web technologies. I specialize in React
-          and Node.js.
+          I build websites using full-stack JavaScript, CSS, and other modern web technologies. Every site I build is
+          designed from the ground up to help you achieve your online business goals.
         </p>
 
         <h3 className="heading-tertiary u-margin-bottom-small">Digital marketer</h3>
         <p className="paragraph">
-          I understand how digital marketing and web technology are connected, and I would love to help you develop a
-          comprehensive web strategy that includes both aspects to achieve your business goals.
+          I understand how digital marketing and web technology are connected, and I want to help you develop a
+          comprehensive web strategy that includes both.
         </p>
 
         <h3 className="heading-tertiary u-margin-bottom-small">Mentor and educator</h3>
         <p className="paragraph">
-          I've taught software training seminars across the United States and Canada, and I love helping people and
-          teams grow and develop their skills.
+          I love working with people, and I genuinely enjoy teaching individuals and teams how to leverage websites to
+          build strong businesses. Let's grab coffee, tea, or beer, and start the conversation.
         </p>
 
-        <ButtonText link="#features" text="Learn more &rarr;" />
+        <div className={styles.btnContainer}>
+          <ButtonText link="#quote" primary>
+            Mmmm, coffee ☕
+          </ButtonText>
+          <ButtonText link="#quote" tertiary>
+            Mmmm, tea 🍵
+          </ButtonText>
+          <ButtonText link="#quote" secondary>
+            Mmmm, beer 🍺
+          </ButtonText>
+        </div>
       </div>
     </div>
   </section>

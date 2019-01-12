@@ -33,9 +33,7 @@ const Services = () => (
           imageClass="dev"
           heading="Foundational Services"
           list={foundational}
-          ctaLabel={'Starting at'}
           ctaDescription={'$2,999'}
-          btnText={'Get a quote!'}
         />
       </div>
       <div className="col-1-of-3">
@@ -44,9 +42,7 @@ const Services = () => (
           imageClass="design"
           heading="Advanced Services"
           list={advanced}
-          ctaLabel={'Starting at'}
           ctaDescription={'$4,999'}
-          btnText={'Get a quote!'}
         />
       </div>
       <div className="col-1-of-3">
@@ -55,14 +51,14 @@ const Services = () => (
           imageClass="social"
           heading="Premium Services"
           list={premium}
-          ctaLabel={'Starting at'}
           ctaDescription={'$9,999'}
-          btnText={'Get a quote!'}
         />
       </div>
     </div>
     <div className={`u-margin-top-huge ${styles.btnContainer}`}>
-      <ButtonRound link="#features" text="Learn More" blue animated />
+      <ButtonRound link="#features" primary animated>
+        Learn more
+      </ButtonRound>
     </div>
   </section>
 );

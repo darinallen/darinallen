@@ -22,10 +22,12 @@ const Card = ({ colorClass, imageClass, heading, list, ctaLabel, ctaDescription,
     <div className={`${styles.side} ${styles.back} ${styles[colorClass]}`}>
       <div className={styles.cta}>
         <div className={styles.ctaBox}>
-          <p className={styles.ctaLabel}>{ctaLabel}</p>
+          <p className={styles.ctaLabel}>Starting at</p>
           <p className={styles.ctaDescription}>{ctaDescription}</p>
         </div>
-        <ButtonRound link="#popup" text={btnText} white animated />
+        <ButtonRound link="#popup" white animated>
+          Get a quote!
+        </ButtonRound>
       </div>
     </div>
   </div>
