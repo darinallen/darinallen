@@ -5,12 +5,28 @@ import Main from '../components/Main';
 import Footer from '../components/Footer';
 import Popup from '../components/Popup';
 
-export default () => (
-  <div>
-    <Navigation />
-    <Header />
-    <Main />
-    <Footer />
-    <Popup />
-  </div>
-);
+class Home extends React.Component {
+  state = {
+    beverage: 'Coffee'
+  };
+
+  updateBeverage = beverage => {
+    this.setState({ beverage });
+  };
+
+  render() {
+    const { beverage } = this.state;
+
+    return (
+      <div>
+        <Navigation beverage={beverage} />
+        <Header />
+        <Main beverage={beverage} updateBeverage={this.updateBeverage} />
+        <Footer />
+        <Popup />
+      </div>
+    );
+  }
+}
+
+export default Home;

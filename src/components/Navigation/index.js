@@ -23,6 +23,7 @@ class Navigation extends React.Component {
   };
 
   render() {
+    const { beverage } = this.props;
     const { open, linksUnclickable } = this.state;
     return (
       <div className={styles.navigation}>
@@ -47,7 +48,7 @@ class Navigation extends React.Component {
               Stories
             </NavItem>
             <NavItem link="#contact" num="05" closeMenu={this.closeMenu}>
-              Meet for coffee
+              {`Meet for ${beverage}`}
             </NavItem>
           </ul>
         </nav>
