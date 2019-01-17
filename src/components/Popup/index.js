@@ -30,7 +30,7 @@ const Popup = () => (
           venenatis lectus magna fringilla urna. Mattis aliquam faucibus purus in massa tempor nec feugiat nisl. Et odio
           pellentesque diam volutpat commodo sed egestas.
         </p>
-        <ButtonRound link="#quote" primary>
+        <ButtonRound link="#contact" primary>
           Get a quote
         </ButtonRound>
       </div>

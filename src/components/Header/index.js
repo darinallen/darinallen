@@ -21,7 +21,7 @@ export default props => (
         <span className="heading-primary-sub">Full-stack Web Developer</span>
       </h1>
 
-      <ButtonRound link="#quote" white animated>
+      <ButtonRound link="#contact" white animated>
         Let's build something cool
       </ButtonRound>
     </div>

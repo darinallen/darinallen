@@ -2,16 +2,16 @@ import React from 'react';
 
 import ButtonRound from '../../shared/buttons/ButtonRound';
 
-import styles from './quote.module.scss';
+import styles from './contact.module.scss';
 
-const Stories = () => (
-  <section className={styles.quote} id="quote">
+const Contact = ({ beverage }) => (
+  <section className={styles.contact} id="contact">
     <div className="row">
-      <div className={styles.quoteInner}>
+      <div className={styles.contactInner}>
         <div className={styles.formContainer}>
           <form action="#" className={styles.form}>
             <div className="u-margin-bottom-medium">
-              <h2 className="heading-secondary">Get a quote</h2>
+              <h2 className="heading-secondary">{`Meet for ${beverage}`}</h2>
             </div>
             <div className={styles.group}>
               <input type="text" className={styles.input} placeholder="Full name" id="name" required />
@@ -53,4 +53,4 @@ const Stories = () => (
   </section>
 );
 
-export default Stories;
+export default Contact;

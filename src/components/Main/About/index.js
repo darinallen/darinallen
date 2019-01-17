@@ -3,7 +3,7 @@ import ButtonText from '../../shared/buttons/ButtonText';
 import CircleImage from './CircleImage';
 import styles from './about.module.scss';
 
-const About = () => (
+const About = ({ updateBeverage }) => (
   <section className={styles.about} id="about">
     <div className="u-center-text u-margin-bottom-large">
       <h2 className="heading-secondary">About Me</h2>
@@ -32,13 +32,13 @@ const About = () => (
         </p>
 
         <div className={styles.btnContainer}>
-          <ButtonText link="#quote" primary>
+          <ButtonText link="#contact" onClick={() => updateBeverage('Coffee')} primary>
             Mmmm, coffee ☕
           </ButtonText>
-          <ButtonText link="#quote" tertiary>
+          <ButtonText link="#contact" onClick={() => updateBeverage('Tea')} tertiary>
             Mmmm, tea 🍵
           </ButtonText>
-          <ButtonText link="#quote" secondary>
+          <ButtonText link="#contact" onClick={() => updateBeverage('Beer')} secondary>
             Mmmm, beer 🍺
           </ButtonText>
         </div>
