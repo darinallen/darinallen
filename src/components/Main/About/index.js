@@ -28,7 +28,9 @@ const About = ({ updateBeverage }) => (
         <h3 className="heading-tertiary u-margin-bottom-small">Mentor and educator</h3>
         <p className="paragraph">
           I love working with people, and I genuinely enjoy teaching individuals and teams how to leverage websites to
-          build strong businesses. Let's grab coffee, tea, or beer, and start the conversation.
+          build strong businesses. Let's grab <span className={styles.coffee}>coffee</span>,{' '}
+          <span className={styles.tea}>tea</span>, or <span className={styles.beer}>beer</span>, and start the
+          conversation.
         </p>
 
         <div className={styles.btnContainer}>
