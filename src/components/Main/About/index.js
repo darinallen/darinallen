@@ -34,13 +34,13 @@ const About = ({ updateBeverage }) => (
         </p>
 
         <div className={styles.btnContainer}>
-          <ButtonText link="#contact" onClick={() => updateBeverage('Coffee')} primary>
+          <ButtonText link="#contact" onClick={() => updateBeverage('coffee')} primary>
             Mmmm, coffee ☕
           </ButtonText>
-          <ButtonText link="#contact" onClick={() => updateBeverage('Tea')} tertiary>
+          <ButtonText link="#contact" onClick={() => updateBeverage('tea')} tertiary>
             Mmmm, tea 🍵
           </ButtonText>
-          <ButtonText link="#contact" onClick={() => updateBeverage('Beer')} secondary>
+          <ButtonText link="#contact" onClick={() => updateBeverage('beer')} secondary>
             Mmmm, beer 🍺
           </ButtonText>
         </div>

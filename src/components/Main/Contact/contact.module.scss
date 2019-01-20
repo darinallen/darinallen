@@ -11,30 +11,48 @@
 }
 
 .contactInner {
-  background-image: linear-gradient(105deg, rgba($white, 0.9) 0%, rgba($white, 0.9) 50%, transparent 50%),
+  background-image: linear-gradient(105deg, rgba($white, 0.9) 0%, rgba($white, 0.9) 70%, transparent 50%),
     url('./charts.jpg');
-  background-size: 100%; // means the same thing as 'cover'
+  background-size: cover;
   background-position: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($black, 0.2);
-
-  @include respond(tab-land) {
-    background-image: linear-gradient(105deg, rgba($white, 0.9) 0%, rgba($white, 0.9) 65%, transparent 65%),
-      url('./charts.jpg');
-    background-size: cover;
-  }
 
   @include respond(tab-port) {
     background-image: linear-gradient(to right, rgba($white, 0.9) 0%, rgba($white, 0.9) 100%), url('./charts.jpg');
   }
 }
 
+.heading {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, rgba($color-primary-dark, 0.8), rgba($color-primary, 0.8));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  margin-left: 0.2rem;
+  transition: all 0.2s;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+
 .formContainer {
-  width: 50%;
+  width: 70%;
   padding: 6rem;
 
   @include respond(tab-land) {
-    width: 65%;
+    width: 83%;
   }
 
   @include respond(tab-port) {
@@ -83,6 +101,11 @@
   color: $grey-2;
 }
 
+.textArea {
+  resize: none;
+  height: 10rem;
+}
+
 .label {
   font-size: 1.2rem;
   font-weight: 700;
@@ -99,7 +122,7 @@
 }
 
 .radioGroup {
-  width: 50%;
+  width: 33.33333333%;
   display: inline-block;
 
   @include respond(tab-port) {
@@ -122,12 +145,35 @@
 .radioButton {
   height: 3rem;
   width: 3rem;
-  border: 5px solid $color-primary;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
   left: 0;
   top: -0.4rem;
+
+  &.coffeeRadioButton {
+    border: 5px solid $color-primary;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
+  &.teaRadioButton {
+    border: 5px solid $color-tertiary-dark;
+
+    &::after {
+      background-color: $color-tertiary-dark;
+    }
+  }
+
+  &.beerRadioButton {
+    border: 5px solid $color-secondary-dark;
+
+    &::after {
+      background-color: $color-secondary-dark;
+    }
+  }
 }
 
 .radioButton::after {
@@ -140,7 +186,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: $color-primary;
   opacity: 0;
   transition: opacity 0.2s;
 }

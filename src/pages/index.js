@@ -7,7 +7,7 @@ import Popup from '../components/Popup';
 
 class Home extends React.Component {
   state = {
-    beverage: 'Coffee'
+    beverage: 'coffee'
   };
 
   updateBeverage = beverage => {

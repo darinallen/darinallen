@@ -42,13 +42,13 @@ class Navigation extends React.Component {
               Features
             </NavItem>
             <NavItem link="#services" num="03" closeMenu={this.closeMenu}>
-              Consuting services
+              Consulting services
             </NavItem>
             <NavItem link="#stories" num="04" closeMenu={this.closeMenu}>
               Stories
             </NavItem>
             <NavItem link="#contact" num="05" closeMenu={this.closeMenu}>
-              {`Meet for ${beverage}`}
+              Discuss a project
             </NavItem>
           </ul>
         </nav>
