@@ -13,27 +13,27 @@ const Footer = () => (
         <div className={styles.navigation}>
           <ul className={styles.list}>
             <li className={styles.item}>
-              <a href="#" className={styles.link}>
+              <a href="https://github.com/darinallen" target="_blank" className={styles.link}>
                 GitHub
               </a>
             </li>
             <li className={styles.item}>
-              <a href="#" className={styles.link}>
+              <a href="https://twitter.com/darinallen" target="_blank" className={styles.link}>
                 Twitter
               </a>
             </li>
             <li className={styles.item}>
-              <a href="#" className={styles.link}>
+              <a href="http://linkedin.com/in/darinallen" target="_blank" className={styles.link}>
                 LinkedIn
               </a>
             </li>
             <li className={styles.item}>
-              <a href="#" className={styles.link}>
+              <a href="https://medium.com/@darinallen" target="_blank" className={styles.link}>
                 Blog
               </a>
             </li>
             <li className={styles.item}>
-              <a href="#" className={styles.link}>
+              <a href="#contact" className={styles.link}>
                 Contact
               </a>
             </li>

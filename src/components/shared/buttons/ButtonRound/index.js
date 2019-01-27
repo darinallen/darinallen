@@ -1,15 +1,15 @@
 import React from 'react';
 import styles from './button-round.module.scss';
 
-const ButtonRound = ({ el, link = '#', children, ...btnStyles }) => {
+const ButtonRound = ({ el, type, link = '#', children, ...btnStyles }) => {
   let classes = `${styles.btn}`;
 
   for (let key in btnStyles) {
-    classes += ` ${styles[key]}`;
+    classes += btnStyles[key] ? ` ${styles[key]}` : '';
   }
 
   return el === 'button' ? (
-    <button href={link} className={classes}>
+    <button href={link} className={classes} type={type}>
       {children}
     </button>
   ) : (

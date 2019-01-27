@@ -3,23 +3,12 @@
 
 .features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba($color-primary-dark, 0.8), rgba($color-primary-light, 0.8)),
+  background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)),
     url('./business.jpeg');
   background-size: cover;
   background-position: center;
-  transform: skewY(-4deg);
-  margin-top: -5rem;
 
   @include respond(tab-port) {
     padding: 10rem 0;
-    transform: skewY(-7deg);
-  }
-}
-
-.features > * {
-  transform: skewY(4deg);
-
-  @include respond(tab-port) {
-    transform: skewY(7deg);
   }
 }

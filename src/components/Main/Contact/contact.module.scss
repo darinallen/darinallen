@@ -3,7 +3,7 @@
 
 .contact {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary-light);
+  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 
   @include respond(tab-port) {
     padding: 10rem 0;
@@ -28,7 +28,7 @@
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, rgba($color-primary-dark, 0.8), rgba($color-primary, 0.8));
+  background-image: linear-gradient(to right, rgba($color-primary, 0.8), rgba($color-primary-dark, 0.8));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -150,29 +150,10 @@
   position: absolute;
   left: 0;
   top: -0.4rem;
+  border: 5px solid $color-primary;
 
-  &.coffeeRadioButton {
-    border: 5px solid $color-primary;
-
-    &::after {
-      background-color: $color-primary;
-    }
-  }
-
-  &.teaRadioButton {
-    border: 5px solid $color-tertiary-dark;
-
-    &::after {
-      background-color: $color-tertiary-dark;
-    }
-  }
-
-  &.beerRadioButton {
-    border: 5px solid $color-secondary-dark;
-
-    &::after {
-      background-color: $color-secondary-dark;
-    }
+  &::after {
+    background-color: $color-primary;
   }
 }
 
@@ -192,4 +173,8 @@
 
 .radioInput:checked + .radioLabel .radioButton::after {
   opacity: 1;
+}
+
+.checkmark {
+  margin-left: 1rem;
 }

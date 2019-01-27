@@ -35,20 +35,17 @@ class Navigation extends React.Component {
         </div>
         <nav className={`${styles.nav} ${open && styles.visible} ${linksUnclickable && styles.coverLinks}`}>
           <ul className={styles.list}>
-            <NavItem link="#about" num="01" closeMenu={this.closeMenu}>
+            <NavItem link="#about" closeMenu={this.closeMenu}>
               About me
             </NavItem>
-            <NavItem link="#features" num="02" closeMenu={this.closeMenu}>
+            <NavItem link="#features" closeMenu={this.closeMenu}>
               Features
             </NavItem>
-            <NavItem link="#services" num="03" closeMenu={this.closeMenu}>
-              Consulting services
+            <NavItem link="#skills" closeMenu={this.closeMenu}>
+              Skills
             </NavItem>
-            <NavItem link="#stories" num="04" closeMenu={this.closeMenu}>
-              Stories
-            </NavItem>
-            <NavItem link="#contact" num="05" closeMenu={this.closeMenu}>
-              Discuss a project
+            <NavItem link="#contact" closeMenu={this.closeMenu}>
+              Contact
             </NavItem>
           </ul>
         </nav>
@@ -62,7 +59,6 @@ export default Navigation;
 const NavItem = ({ link, num, closeMenu, children }) => (
   <li className={styles.item} onClick={closeMenu}>
     <a href={link} className={styles.link}>
-      <span className={styles.linkNum}>{num}</span>
       {children}
     </a>
   </li>

@@ -2,12 +2,16 @@
 @import '../../../styles/mixins';
 
 .about {
-  background-color: $grey-light-1;
-  padding: 20rem 0 25rem 0;
-  margin-top: -10vh;
+  color: $grey-light-2;
+  background-color: $grey-dark-1;
+  padding: 18rem 0 19rem 0;
 
   @include respond(tab-port) {
-    padding: 15rem 0 20rem 0;
+    padding: 15rem 0 16rem 0;
+  }
+
+  @include respond(phone) {
+    padding: 10rem 0 11rem 0;
   }
 }
 
@@ -51,16 +55,16 @@
 }
 
 .coffee {
-  color: $color-primary;
+  color: $color-primary-light;
   font-weight: 700;
 }
 
 .tea {
-  color: $color-tertiary-dark;
+  color: $color-tertiary-light;
   font-weight: 700;
 }
 
 .beer {
-  color: $color-secondary-dark;
+  color: $color-secondary-light;
   font-weight: 700;
 }
