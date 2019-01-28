@@ -4,10 +4,10 @@
 .about {
   color: $grey-light-2;
   background-color: $grey-dark-1;
-  padding: 18rem 0 19rem 0;
+  padding: 14rem 0 16rem 0;
 
   @include respond(tab-port) {
-    padding: 15rem 0 16rem 0;
+    padding: 12rem 0 13rem 0;
   }
 
   @include respond(phone) {

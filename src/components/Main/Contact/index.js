@@ -54,7 +54,7 @@ class Contact extends React.Component {
     return (
       <section className={styles.contact} id="contact">
         <div className="row">
-          <div className={styles.contactInner}>
+          <div className={`${styles.contactInner} ${styles[beverage]}`}>
             <div className={styles.formContainer}>
               <form id="contact_form" action="#" className={styles.form} onSubmit={this.handleSubmit}>
                 <div className="u-margin-bottom-medium">

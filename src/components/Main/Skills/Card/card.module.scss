@@ -91,17 +91,17 @@
   box-decoration-break: clone;
 }
 
-.list {
+.skills {
   padding: 2rem 6rem;
   list-style: none;
 }
 
-.item {
+.skill {
   text-align: center;
   padding: 1rem;
 }
 
-.item:not(:last-child) {
+.skill:not(:last-child) {
   border-bottom: 1px solid $grey-light-2;
 }
 

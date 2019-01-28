@@ -11,15 +11,37 @@
 }
 
 .contactInner {
-  background-image: linear-gradient(105deg, rgba($white, 0.9) 0%, rgba($white, 0.9) 70%, transparent 50%),
-    url('./charts.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($black, 0.2);
+}
+
+.coffee {
+  background-image: linear-gradient(105deg, rgba($off-white, 0.9) 0%, rgba($off-white, 0.9) 70%, transparent 50%),
+    url('./coffee.jpg');
 
   @include respond(tab-port) {
-    background-image: linear-gradient(to right, rgba($white, 0.9) 0%, rgba($white, 0.9) 100%), url('./charts.jpg');
+    background-image: linear-gradient(to right, rgba($off-white, 0.9) 0%, rgba($off-white, 0.9) 100%),
+      url('./coffee.jpg');
+  }
+}
+
+.tea {
+  background-image: linear-gradient(105deg, rgba($off-white, 0.9) 0%, rgba($off-white, 0.9) 70%, transparent 50%),
+    url('./tea.jpg');
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(to right, rgba($off-white, 0.9) 0%, rgba($off-white, 0.9) 100%), url('./tea.jpg');
+  }
+}
+
+.beer {
+  background-image: linear-gradient(105deg, rgba($off-white, 0.9) 0%, rgba($off-white, 0.9) 70%, transparent 50%),
+    url('./beer.jpg');
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(to right, rgba($off-white, 0.9) 0%, rgba($off-white, 0.9) 100%), url('./beer.jpg');
   }
 }
 

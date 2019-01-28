@@ -1,42 +1,20 @@
 @import '../../../styles/variables';
 @import '../../../styles/mixins';
 
-.skills {
-  padding: 20rem 5rem;
-  margin-top: -5rem;
-  background-color: $grey-light-2;
+.services {
+  background-color: $grey-dark-1;
+  padding: 14rem 0 16rem 0;
+
+  @include respond(tab-port) {
+    padding: 12rem 0 13rem 0;
+  }
+
+  @include respond(phone) {
+    padding: 10rem 0 11rem 0;
+  }
 }
 
-.categories {
+.btnContainer {
   display: flex;
-}
-
-.category {
-  flex: 1;
-  margin: 0 3rem;
-  height: 60rem;
-  border-radius: 5px;
-  text-align: center;
-  padding: 3rem;
-}
-
-.technology {
-  border: 2px solid $color-primary-light;
-}
-
-.marketing {
-  border: 2px solid $color-primary;
-}
-
-.personal {
-  border: 2px solid $color-primary-dark;
-}
-
-.list {
-  list-style: none;
-}
-
-.skill {
-  border-bottom: 1px solid $color-primary;
-  padding: 1rem;
+  justify-content: center;
 }
