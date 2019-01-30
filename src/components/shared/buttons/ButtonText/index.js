@@ -1,4 +1,5 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import styles from './button-text.module.scss';
 
 const ButtonText = ({ children, link = '#', onClick, ...btnStyles }) => {
@@ -8,9 +9,9 @@ const ButtonText = ({ children, link = '#', onClick, ...btnStyles }) => {
     classes += ` ${styles[key]}`;
   }
   return (
-    <a href={link} className={classes} onClick={onClick}>
+    <AnchorLink href={link} className={classes} onClick={onClick}>
       {children}
-    </a>
+    </AnchorLink>
   );
 };
 

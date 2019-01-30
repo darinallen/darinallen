@@ -1,4 +1,5 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import styles from './button-round.module.scss';
 
 const ButtonRound = ({ el, type, link = '#', children, ...btnStyles }) => {
@@ -13,9 +14,9 @@ const ButtonRound = ({ el, type, link = '#', children, ...btnStyles }) => {
       {children}
     </button>
   ) : (
-    <a href={link} className={classes}>
+    <AnchorLink href={link} className={classes}>
       {children}
-    </a>
+    </AnchorLink>
   );
 };
 

@@ -7,7 +7,7 @@ const designSkills = ['Responsive Design', 'Modern CSS', 'Animation Effects', 'D
 const strategySkills = ['SEO', 'Social Marketing', 'Content Marketing', 'Digital Advertising', 'Ecommerce'];
 
 const Skills = () => (
-  <section className={styles.services} id="services">
+  <section className={styles.services} id="skills">
     <div className="u-center-text u-margin-bottom-large">
       <h2 className="heading-secondary">Skills</h2>
     </div>

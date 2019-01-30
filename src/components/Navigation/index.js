@@ -56,7 +56,7 @@ class Navigation extends React.Component {
 
 export default Navigation;
 
-const NavItem = ({ link, num, closeMenu, children }) => (
+const NavItem = ({ link, closeMenu, children }) => (
   <li className={styles.item} onClick={closeMenu}>
     <a href={link} className={styles.link}>
       {children}

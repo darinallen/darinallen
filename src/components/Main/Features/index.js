@@ -22,7 +22,7 @@ const Features = () => (
       </div>
       <div className="col-1-of-4">
         <Feature
-          heading="Leading technology"
+          heading="Modern technology"
           iconClass="icon-basic-bolt"
           text="Premier tech solutions under the hood, optimized for speed and reliability."
         />
