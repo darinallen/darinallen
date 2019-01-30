@@ -1,0 +1,20 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.logo {
+  height: 5rem;
+}
+
+.title {
+  text-align: center;
+  font-size: $default-font-size;
+  color: $white;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: normal;
+
+  @include respond(tab-port) {
+    letter-spacing: 0.2rem;
+  }
+}

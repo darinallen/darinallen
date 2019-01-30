@@ -4,8 +4,12 @@
   backface-visibility: hidden;
   margin-bottom: 6rem;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     margin-bottom: 5rem;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 4rem;
   }
 }
 

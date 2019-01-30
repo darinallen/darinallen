@@ -10,6 +10,7 @@ class Contact extends React.Component {
   state = {
     name: '',
     email: '',
+    phone: '',
     concept: '',
     submitted: false
   };
@@ -20,13 +21,14 @@ class Contact extends React.Component {
   };
 
   sendEmail = () => {
-    const { name, email, concept } = this.state;
+    const { name, email, phone, concept } = this.state;
     const { beverage } = this.props;
     let contactNumber = ((Math.random() * 100000) | 0).toString();
 
     const templateParams = {
       name,
       email,
+      phone,
       concept,
       contactNumber,
       beverage
@@ -50,113 +52,133 @@ class Contact extends React.Component {
 
   render() {
     const { beverage, updateBeverage } = this.props;
-    const { name, email, concept, submitted } = this.state;
+    const { name, email, phone, concept, submitted } = this.state;
     return (
       <section className={styles.contact} id="contact">
         <div className="row">
-          <div className={`${styles.contactInner} ${styles[beverage]}`}>
-            <div className={styles.formContainer}>
-              <form id="contact_form" action="#" className={styles.form} onSubmit={this.handleSubmit}>
-                <div className="u-margin-bottom-medium">
-                  <h2 className={styles.heading}>{`Discuss a project over ${beverage}`}</h2>
-                </div>
-                <div className={styles.group}>
-                  <input
-                    type="text"
-                    className={styles.input}
-                    placeholder="Full name"
-                    name="name"
-                    id="name"
-                    value={name}
-                    onChange={this.handleChange}
-                    required
-                  />
-                  <label htmlFor="name" className={styles.label}>
-                    Full name
-                  </label>
-                </div>
-                <div className={styles.group}>
-                  <input
-                    type="email"
-                    className={styles.input}
-                    placeholder="Email address"
-                    name="email"
-                    id="email"
-                    value={email}
-                    onChange={this.handleChange}
-                    required
-                  />
-                  <label htmlFor="email" className={styles.label}>
-                    Email address
-                  </label>
-                </div>
-                <div className={styles.group}>
-                  <textarea
-                    type="textarea"
-                    className={`${styles.textArea} ${styles.input}`}
-                    placeholder="Project concept"
-                    name="concept"
-                    id="concept"
-                    value={concept}
-                    onChange={this.handleChange}
-                    required
-                  />
-                  <label htmlFor="concept" className={styles.label}>
-                    Project concept
-                  </label>
-                </div>
-                <div className={`${styles.group} u-margin-bottom-medium`}>
-                  <div className={styles.radioGroup}>
+          <div className={`${styles.overlay} ${styles[beverage]}`}>
+            <div className={styles.contactInner}>
+              <div className={styles.formContainer}>
+                <form id="contact_form" action="#" className={styles.form} onSubmit={this.handleSubmit}>
+                  <div className="u-margin-bottom-medium">
+                    <h2 className={styles.heading}>
+                      {`Discuss a project over `}
+                      <span className={styles.beverageText}>{beverage}</span>
+                    </h2>
+                  </div>
+                  <div className={styles.group}>
                     <input
-                      type="radio"
-                      className={styles.radioInput}
-                      id="coffee"
-                      value="coffee"
-                      name="beverage"
-                      checked={beverage === 'coffee'}
-                      onChange={() => updateBeverage('coffee')}
+                      type="text"
+                      className={styles.input}
+                      placeholder="Full name"
+                      name="name"
+                      id="name"
+                      value={name}
+                      onChange={this.handleChange}
+                      required
                     />
-                    <label htmlFor="coffee" className={styles.radioLabel}>
-                      <span className={`${styles.radioButton} ${styles.coffeeRadioButton}`} />
-                      Coffee
+                    <label htmlFor="name" className={styles.label}>
+                      Full name
                     </label>
                   </div>
-                  <div className={styles.radioGroup}>
+                  <div className={styles.group}>
                     <input
-                      type="radio"
-                      className={styles.radioInput}
-                      id="tea"
-                      value="tea"
-                      name="beverage"
-                      checked={beverage === 'tea'}
-                      onChange={() => updateBeverage('tea')}
+                      type="email"
+                      className={styles.input}
+                      placeholder="Email address"
+                      name="email"
+                      id="email"
+                      value={email}
+                      onChange={this.handleChange}
+                      required
                     />
-                    <label htmlFor="tea" className={styles.radioLabel}>
-                      <span className={`${styles.radioButton} ${styles.teaRadioButton}`} />
-                      Tea
+                    <label htmlFor="email" className={styles.label}>
+                      Email address
                     </label>
                   </div>
-                  <div className={styles.radioGroup}>
+                  <div className={styles.group}>
                     <input
-                      type="radio"
-                      className={styles.radioInput}
-                      id="beer"
-                      value="beer"
-                      name="beverage"
-                      checked={beverage === 'beer'}
-                      onChange={() => updateBeverage('beer')}
+                      type="tel"
+                      className={styles.input}
+                      placeholder="Phone number"
+                      name="phone"
+                      id="phone"
+                      value={phone}
+                      onChange={this.handleChange}
+                      required
                     />
-                    <label htmlFor="beer" className={styles.radioLabel}>
-                      <span className={`${styles.radioButton} ${styles.beerRadioButton}`} />
-                      Beer
+                    <label htmlFor="phone" className={styles.label}>
+                      Phone number
                     </label>
                   </div>
-                </div>
-                <ButtonRound el="button" type="submit" primary={!submitted} tertiary={submitted} animated>
-                  <span>{`Submit${submitted ? 'ted' : ''}`}</span>
-                  {submitted && <span className={styles.checkmark}>✔</span>}
-                </ButtonRound>
-              </form>
+                  <div className={styles.group}>
+                    <textarea
+                      type="textarea"
+                      className={`${styles.textArea} ${styles.input}`}
+                      placeholder="Project concept"
+                      name="concept"
+                      id="concept"
+                      value={concept}
+                      onChange={this.handleChange}
+                      required
+                    />
+                    <label htmlFor="concept" className={styles.label}>
+                      Project concept
+                    </label>
+                  </div>
+                  <div className={`${styles.group} u-margin-bottom-medium`}>
+                    <div className={styles.radioGroup}>
+                      <input
+                        type="radio"
+                        className={styles.radioInput}
+                        id="coffee"
+                        value="coffee"
+                        name="beverage"
+                        checked={beverage === 'coffee'}
+                        onChange={() => updateBeverage('coffee')}
+                      />
+                      <label htmlFor="coffee" className={styles.radioLabel}>
+                        <span className={`${styles.radioButton} ${styles.coffeeRadioButton}`} />
+                        Coffee
+                      </label>
+                    </div>
+                    <div className={styles.radioGroup}>
+                      <input
+                        type="radio"
+                        className={styles.radioInput}
+                        id="tea"
+                        value="tea"
+                        name="beverage"
+                        checked={beverage === 'tea'}
+                        onChange={() => updateBeverage('tea')}
+                      />
+                      <label htmlFor="tea" className={styles.radioLabel}>
+                        <span className={`${styles.radioButton} ${styles.teaRadioButton}`} />
+                        Tea
+                      </label>
+                    </div>
+                    <div className={styles.radioGroup}>
+                      <input
+                        type="radio"
+                        className={styles.radioInput}
+                        id="beer"
+                        value="beer"
+                        name="beverage"
+                        checked={beverage === 'beer'}
+                        onChange={() => updateBeverage('beer')}
+                      />
+                      <label htmlFor="beer" className={styles.radioLabel}>
+                        <span className={`${styles.radioButton} ${styles.beerRadioButton}`} />
+                        Beer
+                      </label>
+                    </div>
+                  </div>
+                  <ButtonRound el="button" type="submit" primary={!submitted} tertiary={submitted} animated>
+                    <span>{`Submit${submitted ? 'ted' : ''}`}</span>
+                    {submitted && <span className={styles.checkmark}>✔</span>}
+                  </ButtonRound>
+                </form>
+              </div>
             </div>
           </div>
         </div>

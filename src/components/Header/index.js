@@ -1,18 +1,12 @@
 import React from 'react';
+import Logo from '../shared/Logo';
 import ButtonRound from '../shared/buttons/ButtonRound';
 import styles from './header.module.scss';
-import guitar from '../shared/images/guitar.png';
 
-export default props => (
+const Header = () => (
   <header className={styles.header}>
     <div className={styles.logoBox}>
-      <img className={styles.logo} src={guitar} alt="logo" />
-      <p className={styles.title}>Acousticode</p>
-    </div>
-
-    <div className={styles.logoBox}>
-      <img className={styles.logo} src={guitar} alt="logo" />
-      <p className={styles.title}>Acousticode</p>
+      <Logo />
     </div>
 
     <div className={styles.textBox}>
@@ -27,3 +21,5 @@ export default props => (
     </div>
   </header>
 );
+
+export default Header;

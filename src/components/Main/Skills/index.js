@@ -3,14 +3,8 @@ import Card from './Card';
 import styles from './skills.module.scss';
 
 const devSkills = ['JavaScript', 'React', 'Node.js', 'MySQL', 'GraphQL'];
-const designSkills = [
-  'Responsive Design',
-  'Modern CSS & Sass',
-  'Animation Effects',
-  'Data Visualizations',
-  'Adobe Photoshop'
-];
-const strategySkills = ['SEO', 'Social Media Marketing', 'Content Marketing', 'Digital Advertising', 'Ecommerce'];
+const designSkills = ['Responsive Design', 'Modern CSS', 'Animation Effects', 'Data Visualizations', 'Adobe Photoshop'];
+const strategySkills = ['SEO', 'Social Marketing', 'Content Marketing', 'Digital Advertising', 'Ecommerce'];
 
 const Skills = () => (
   <section className={styles.services} id="services">

@@ -6,11 +6,11 @@
   padding: 14rem 0 16rem 0;
 
   @include respond(tab-port) {
-    padding: 12rem 0 13rem 0;
+    padding: 12rem 0 14rem 0;
   }
 
   @include respond(phone) {
-    padding: 10rem 0 11rem 0;
+    padding: 10rem 0 12rem 0;
   }
 }
 

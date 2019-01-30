@@ -1,5 +1,5 @@
 import React from 'react';
-import image from './darin.jpg';
+import image from './profile.jpg';
 import styles from './circleImage.module.scss';
 
 const CircleImage = () => (
