@@ -172,7 +172,7 @@ class Contact extends React.Component {
                       </label>
                     </div>
                   </div>
-                  <ButtonRound el="button" type="submit" primary={!submitted} tertiary={submitted} animated>
+                  <ButtonRound el="button" type="submit" primary={!submitted} tertiary={submitted}>
                     <span>{`Submit${submitted ? 'ted' : ''}`}</span>
                     {submitted && <span className={styles.checkmark}>✔</span>}
                   </ButtonRound>

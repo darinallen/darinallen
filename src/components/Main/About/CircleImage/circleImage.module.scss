@@ -11,9 +11,16 @@
   border: 2px solid $grey-light-2;
 }
 
-.img {
+.profileImg {
   height: 100%;
   transform: scale(1.05);
+  transition: all 0.5s;
+}
+
+.twitterLogo {
+  position: relative;
+  height: 4rem;
+  fill: $white;
   transition: all 0.5s;
 }
 
@@ -23,16 +30,18 @@
   left: 50%;
   transform: translate(-50%, 20%);
   color: $white;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   opacity: 0;
   backface-visibility: hidden;
   transition: all 0.5s;
+  line-height: normal;
   z-index: -1;
 }
 
 .caption:hover {
-  font-size: 2.8rem;
+  color: #6bd7ff;
+  fill: #6bd7ff;
 }
 
 .shape:hover .caption {
@@ -41,7 +50,11 @@
   transform: translate(-50%, -50%);
 }
 
-.shape:hover .img {
+.shape:hover .profileImg {
   transform: scale(1);
   filter: blur(3px) brightness(80%);
+}
+
+.caption:hover .twitterLogo {
+  fill: #6bd7ff;
 }

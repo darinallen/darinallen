@@ -1,5 +1,4 @@
 import React from 'react';
-import ButtonRound from '../../../shared/buttons/ButtonRound';
 import styles from './card.module.scss';
 
 const Card = ({ colorClass, category, skills }) => (

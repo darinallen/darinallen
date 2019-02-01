@@ -19,9 +19,9 @@
   font-weight: 400;
   letter-spacing: 2rem;
   margin-left: 2rem;
-  animation-name: moveInLeft;
+  animation-name: fadeIn;
   animation-duration: 1s;
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
 
   @include respond(phone) {
     letter-spacing: 1rem;
@@ -36,9 +36,9 @@
   font-weight: 700;
   letter-spacing: 1.24rem;
   margin-left: 1.24rem;
-  animation-name: moveInRight;
+  animation-name: fadeIn;
   animation-duration: 1s;
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
 
   @include respond(tab-port) {
     letter-spacing: 1.2rem;
