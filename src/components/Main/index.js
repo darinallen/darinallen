@@ -2,8 +2,8 @@ import React from 'react';
 import About from './About';
 import Features from './Features';
 import Skills from './Skills';
-import Services from './Services';
-import Stories from './Stories';
+// import Services from './Services';
+// import Stories from './Stories';
 import Contact from './Contact';
 import styles from './main.module.scss';
 

@@ -45,7 +45,7 @@ class Navigation extends React.Component {
               Skills
             </NavItem>
             <NavItem link="#contact" closeMenu={this.closeMenu}>
-              Contact
+              Meet for {beverage}
             </NavItem>
           </ul>
         </nav>

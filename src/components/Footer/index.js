@@ -14,22 +14,37 @@ const Footer = () => (
         <div className={styles.navigation}>
           <ul className={styles.list}>
             <li className={styles.item}>
-              <a href="https://github.com/darinallen" target="_blank" className={styles.link}>
+              <a href="https://github.com/darinallen" target="_blank" rel="noopener noreferrer" className={styles.link}>
                 GitHub
               </a>
             </li>
             <li className={styles.item}>
-              <a href="https://twitter.com/darinallen" target="_blank" className={styles.link}>
+              <a
+                href="https://twitter.com/darinallen"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
                 Twitter
               </a>
             </li>
             <li className={styles.item}>
-              <a href="http://linkedin.com/in/darinallen" target="_blank" className={styles.link}>
+              <a
+                href="http://linkedin.com/in/darinallen"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
                 LinkedIn
               </a>
             </li>
             <li className={styles.item}>
-              <a href="https://medium.com/@darinallen" target="_blank" className={styles.link}>
+              <a
+                href="https://medium.com/@darinallen"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
                 Blog
               </a>
             </li>
@@ -45,7 +60,7 @@ const Footer = () => (
       <div className={styles.column}>
         <p className={styles.copyright}>
           Built by{' '}
-          <a href="https://twitter.com/darinallen" target="_blank" className={styles.link}>
+          <a href="https://twitter.com/darinallen" target="_blank" rel="noopener noreferrer" className={styles.link}>
             Darin Allen
           </a>{' '}
           at Acousticode LLC Copyright &copy; by Darin Allen.

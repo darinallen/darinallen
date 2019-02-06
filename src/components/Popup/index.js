@@ -9,8 +9,8 @@ const Popup = () => (
   <div className={styles.popup} id="popup">
     <div className={styles.content}>
       <div className={styles.left}>
-        <img src={coffee} alt="Tour photo" className={styles.img} />
-        <img src={analytics} alt="Tour photo" className={styles.img} />
+        <img src={coffee} alt="coffee" className={styles.img} />
+        <img src={analytics} alt="tablet" className={styles.img} />
       </div>
       <div className={styles.right}>
         <a href="#services" className={styles.close}>

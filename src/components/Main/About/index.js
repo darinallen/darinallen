@@ -28,21 +28,30 @@ const About = ({ updateBeverage }) => (
 
           <h3 className="heading-tertiary u-margin-bottom-small">Mentor and educator</h3>
           <p className="paragraph">
-            I love working with people, and I genuinely enjoy teaching individuals and teams how to leverage websites to
-            build strong businesses. Let's grab <span className={styles.coffee}>coffee</span>,{' '}
+            I love working with new people, and I genuinely enjoy teaching individuals and teams how to leverage
+            websites to build strong businesses. Let's grab <span className={styles.coffee}>coffee</span>,{' '}
             <span className={styles.tea}>tea</span>, or <span className={styles.beer}>beer</span>, and start the
             conversation.
           </p>
 
           <div className={styles.btnContainer}>
             <ButtonText link="#contact" onClick={() => updateBeverage('coffee')} primary>
-              Mmmm, coffee ☕
+              Mmmm, coffee{' '}
+              <span role="img" aria-label="coffee">
+                ☕
+              </span>
             </ButtonText>
             <ButtonText link="#contact" onClick={() => updateBeverage('tea')} tertiary>
-              Mmmm, tea 🍵
+              Mmmm, tea{' '}
+              <span role="img" aria-label="tea">
+                🍵
+              </span>
             </ButtonText>
             <ButtonText link="#contact" onClick={() => updateBeverage('beer')} secondary>
-              Mmmm, beer 🍺
+              Mmmm, beer{' '}
+              <span role="img" aria-label="beer">
+                🍺
+              </span>
             </ButtonText>
           </div>
         </div>

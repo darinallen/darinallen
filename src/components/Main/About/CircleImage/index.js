@@ -6,7 +6,7 @@ const CircleImage = () => (
   <figure className={styles.shape}>
     <img className={styles.profileImg} src={darin} alt="Darin" />
     <figcaption>
-      <a className={styles.caption} href="https://twitter.com/darinallen" target="_blank">
+      <a className={styles.caption} href="https://twitter.com/darinallen" target="_blank" rel="noopener noreferrer">
         <TwitterLogo />
         @darinallen
       </a>
