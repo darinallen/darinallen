@@ -145,26 +145,11 @@
   .card {
     height: auto;
     border-radius: 3px;
-    background-color: $white;
-    box-shadow: 0 1.5rem 4rem rgba($black, 0.15);
-  }
-
-  .devCard {
-    box-shadow: 0 0 4rem rgba($color-primary-light, 1);
-  }
-
-  .designCard {
-    box-shadow: 0 0 4rem rgba($color-secondary-light, 1);
-  }
-
-  .strategyCard {
-    box-shadow: 0 0 4rem rgba($color-tertiary-light, 1);
   }
 
   .side {
     height: auto;
     position: relative;
-    box-shadow: none;
   }
 
   .back {

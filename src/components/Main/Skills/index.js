@@ -3,7 +3,7 @@ import Card from './Card';
 import styles from './skills.module.scss';
 
 const devSkills = ['JavaScript', 'React', 'Node.js', 'MySQL', 'GraphQL'];
-const designSkills = ['Responsive Design', 'Modern CSS', 'Animation Effects', 'Data Visualizations', 'Adobe Photoshop'];
+const designSkills = ['Responsive Design', 'Modern CSS', 'Animation Effects', 'Data Visualizations', 'Sketch'];
 const strategySkills = ['SEO', 'Social Marketing', 'Content Marketing', 'Digital Advertising', 'Ecommerce'];
 
 const Skills = () => (
