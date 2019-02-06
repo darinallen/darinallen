@@ -16,10 +16,7 @@ const Card = ({ colorClass, category, skills }) => (
         ))}
       </ul>
     </div>
-    <div className={`${styles.side} ${styles.back} ${styles[`${colorClass}Back`]} ${styles[`${colorClass}Border`]}`}>
-      <h4>Examples</h4>
-      <p>That one time I was awesome</p>
-    </div>
+    {/* <div className={`${styles.side} ${styles.back} ${styles[`${colorClass}Back`]} ${styles[`${colorClass}Border`]}`} /> */}
   </div>
 );
 

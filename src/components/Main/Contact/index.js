@@ -54,7 +54,7 @@ class Contact extends React.Component {
     const { name, email, phone, concept, submitted } = this.state;
     return (
       <section className={styles.contact} id="contact">
-        <div className="row">
+        <div className={styles.container}>
           <div className={`${styles.overlay} ${styles[beverage]}`}>
             <div className={styles.contactInner}>
               <div className={styles.formContainer}>

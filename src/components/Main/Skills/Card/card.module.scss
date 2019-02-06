@@ -10,7 +10,8 @@
 
 .side {
   height: 50rem;
-  transition: all 0.8s ease;
+  // transition: all 0.8s ease;
+  transition: all 0.3s ease;
   position: absolute;
   top: 0;
   left: 0;
@@ -128,12 +129,16 @@
 }
 
 .card:hover .front {
-  transform: rotateY(-180deg);
+  transform: scale(1.04);
 }
 
-.card:hover .back {
-  transform: rotateY(0deg);
-}
+// .card:hover .front {
+//   transform: rotateY(-180deg);
+// }
+
+// .card:hover .back {
+//   transform: rotateY(0deg);
+// }
 
 @media only screen and (max-width: 56.25em), only screen and (hover: none) {
   // FUNCTIONALITY
@@ -166,9 +171,9 @@
     transform: rotateY(0);
   }
 
-  .card:hover .front {
-    transform: rotateY(0);
-  }
+  // .card:hover .front {
+  //   transform: rotateY(0);
+  // }
 
   // BACK SIDE STYLING MEDIA QUERY
 }

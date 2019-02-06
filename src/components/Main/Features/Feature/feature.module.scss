@@ -1,5 +1,6 @@
 @import '../../../../styles/variables';
 @import '../../../../styles/mixins';
+@import '../../../../styles/base/animations';
 
 .box {
   background-color: rgba($white, 0.8);
@@ -16,7 +17,7 @@
 }
 
 .box:hover {
-  transform: translateY(-1.5rem) scale(1.03);
+  animation: bounce 0.5s ease-in-out;
 }
 
 .icon {

@@ -8,7 +8,7 @@
   background-size: cover;
   background-position: center;
 
-  @include respond(tab-port) {
-    padding: 10rem 0;
+  @include respond(tab-port-large) {
+    padding: 16rem 0;
   }
 }

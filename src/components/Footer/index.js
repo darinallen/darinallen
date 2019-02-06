@@ -1,4 +1,5 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Logo from '../shared/Logo';
 
 import styles from './footer.module.scss';
@@ -33,9 +34,9 @@ const Footer = () => (
               </a>
             </li>
             <li className={styles.item}>
-              <a href="#contact" className={styles.link}>
+              <AnchorLink href="#contact" className={styles.link}>
                 Contact
-              </a>
+              </AnchorLink>
             </li>
           </ul>
         </div>
