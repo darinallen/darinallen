@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from '../shared/Logo';
-import ButtonRound from '../shared/buttons/ButtonRound';
 import styles from './header.module.scss';
 
 const Header = () => (
