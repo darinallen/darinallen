@@ -8,7 +8,7 @@ const CircleImage = () => (
     <figcaption>
       <a className={styles.caption} href="https://twitter.com/darinallen" target="_blank" rel="noopener noreferrer">
         <TwitterLogo />
-        @darinallen
+        <span className={styles.twitterUsername}>@darinallen</span>
       </a>
     </figcaption>
   </figure>
