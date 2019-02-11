@@ -5,26 +5,16 @@ import styles from './navigation.module.scss';
 class Navigation extends React.Component {
   state = {
     open: false,
-    linksUnclickable: true,
-    hideList: true
+    linksUnclickable: true
   };
 
   openMenu = () => {
-    const _this = this;
     this.setState({ open: true, linksUnclickable: false });
-
-    setTimeout(() => {
-      _this.setState({ hideList: false });
-    }, 320);
   };
 
   closeMenu = () => {
     const _this = this;
     // Once the animation is complete (800ms), remove the z-index to make nav items unclickable
-    setTimeout(() => {
-      _this.setState({ hideList: true });
-    }, 400);
-
     setTimeout(() => {
       // Check if open to avoid setTimeout/setState issues when user clicks on icon in rapid succession
       if (!_this.state.open) _this.setState({ linksUnclickable: true });
@@ -34,7 +24,7 @@ class Navigation extends React.Component {
 
   render() {
     const { beverage } = this.props;
-    const { open, linksUnclickable, hideList } = this.state;
+    const { open, linksUnclickable } = this.state;
     return (
       <div className={styles.navigation}>
         <div onClick={open ? this.closeMenu : this.openMenu} className={`${styles.button} ${!open && styles.spread}`}>
@@ -44,7 +34,7 @@ class Navigation extends React.Component {
           &nbsp;
         </div>
         <nav className={`${styles.nav} ${open && styles.visible} ${linksUnclickable && styles.coverLinks}`}>
-          <ul className={`${styles.list} ${hideList && styles.hidden}`}>
+          <ul className={styles.list}>
             <NavItem link="#about" closeMenu={this.closeMenu}>
               About me
             </NavItem>
