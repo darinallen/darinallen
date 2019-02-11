@@ -20,7 +20,6 @@ class Contact extends React.Component {
   };
 
   sendEmail = () => {
-    console.log('process.env.EMAILJS_USER_ID: ', process.env.GATSBY_EMAILJS_USER_ID);
     const { name, email, phone, concept } = this.state;
     const { beverage } = this.props;
     let contactNumber = ((Math.random() * 100000) | 0).toString();
@@ -37,7 +36,7 @@ class Contact extends React.Component {
     const serviceId = 'default_service';
     const templateId = 'contact_form';
     console.log({ name, email, phone, concept });
-    // emailjs.send(serviceId, templateId, templateParams, process.env.GATSBY_EMAILJS_USER_ID);
+    emailjs.send(serviceId, templateId, templateParams, process.env.GATSBY_EMAILJS_USER_ID);
   };
 
   handleSubmit = e => {
