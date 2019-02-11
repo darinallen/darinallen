@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './Card';
 import styles from './skills.module.scss';
 
-const devSkills = ['JavaScript', 'React', 'Node.js', 'MySQL', 'GraphQL'];
+const devSkills = ['JavaScript', 'React', 'Node.js', 'MySQL', 'MongoDB'];
 const designSkills = ['Responsive Design', 'Modern CSS', 'Animation Effects', 'Balsamiq Mockups', 'Sketch'];
 const strategySkills = ['SEO', 'Social Marketing', 'Content Marketing', 'Digital Advertising', 'Ecommerce'];
 
