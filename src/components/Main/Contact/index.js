@@ -1,7 +1,6 @@
 import React from 'react';
 import * as emailjs from 'emailjs-com';
 
-import emailjsId from './emailjs-id';
 import ButtonRound from '../../shared/buttons/ButtonRound';
 
 import styles from './contact.module.scss';
@@ -36,7 +35,7 @@ class Contact extends React.Component {
 
     const serviceId = 'default_service';
     const templateId = 'contact_form';
-    emailjs.send(serviceId, templateId, templateParams, emailjsId.USER_ID);
+    emailjs.send(serviceId, templateId, templateParams, process.env.EMAILJS_USER_ID);
   };
 
   handleSubmit = e => {

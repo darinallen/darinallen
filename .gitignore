@@ -56,9 +56,10 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.development
+.env.production
 
 .cache/
 public
 yarn-error.log
 .DS_Store
-emailjs-id.js
