@@ -14,10 +14,6 @@ const Header = () => (
         <span className="heading-primary-main">Darin Allen</span>
         <span className="heading-primary-sub">Full-stack Web Developer</span>
       </h1>
-
-      <ButtonRound link="#contact" white animated>
-        Let's build something cool
-      </ButtonRound>
     </div>
   </header>
 );
