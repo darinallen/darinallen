@@ -35,7 +35,6 @@ class Contact extends React.Component {
 
     const serviceId = 'default_service';
     const templateId = 'contact_form';
-    console.log({ name, email, phone, concept });
     emailjs.send(serviceId, templateId, templateParams, process.env.GATSBY_EMAILJS_USER_ID);
   };
 
