@@ -1,4 +1,5 @@
 import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import darin from './profile.jpg';
 import styles from './circleImage.module.scss';
 
@@ -6,10 +7,15 @@ const CircleImage = () => (
   <figure className={styles.shape}>
     <img className={styles.profileImg} src={darin} alt="Darin" />
     <figcaption>
-      <a className={styles.caption} href="https://twitter.com/darinallen" target="_blank" rel="noopener noreferrer">
+      <OutboundLink
+        href="https://twitter.com/darinallen"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.caption}
+      >
         <TwitterLogo />
         <span className={styles.twitterUsername}>@darinallen</span>
-      </a>
+      </OutboundLink>
     </figcaption>
   </figure>
 );

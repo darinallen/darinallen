@@ -1,4 +1,5 @@
 import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Logo from '../shared/Logo';
 
@@ -14,39 +15,44 @@ const Footer = () => (
         <div className={styles.navigation}>
           <ul className={styles.list}>
             <li className={styles.item}>
-              <a href="https://github.com/darinallen" target="_blank" rel="noopener noreferrer" className={styles.link}>
+              <OutboundLink
+                href="https://github.com/darinallen"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
                 GitHub
-              </a>
+              </OutboundLink>
             </li>
             <li className={styles.item}>
-              <a
+              <OutboundLink
                 href="https://twitter.com/darinallen"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
               >
                 Twitter
-              </a>
+              </OutboundLink>
             </li>
             <li className={styles.item}>
-              <a
+              <OutboundLink
                 href="http://linkedin.com/in/darinallen"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
               >
                 LinkedIn
-              </a>
+              </OutboundLink>
             </li>
             <li className={styles.item}>
-              <a
+              <OutboundLink
                 href="https://medium.com/@darinallen"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
               >
                 Blog
-              </a>
+              </OutboundLink>
             </li>
             <li className={styles.item}>
               <AnchorLink href="#contact" className={styles.link}>
@@ -59,11 +65,16 @@ const Footer = () => (
 
       <div className={styles.column}>
         <p className={styles.copyright}>
-          Built by{' '}
-          <a href="https://twitter.com/darinallen" target="_blank" rel="noopener noreferrer" className={styles.link}>
+          {'Built by '}
+          <OutboundLink
+            href="https://twitter.com/darinallen"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
             Darin Allen
-          </a>{' '}
-          at Acousticode LLC Copyright &copy; by Darin Allen.
+          </OutboundLink>
+          {' at Acousticode LLC Copyright &copy; by Darin Allen.'}
         </p>
       </div>
     </div>
