@@ -74,7 +74,7 @@ const Footer = () => (
           >
             Darin Allen
           </OutboundLink>
-          {' at Acousticode LLC Copyright &copy; by Darin Allen.'}
+          {' at Acousticode LLC Copyright © by Darin Allen.'}
         </p>
       </div>
     </div>
