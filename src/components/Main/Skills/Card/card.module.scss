@@ -31,8 +31,11 @@
 .picture {
   background-size: cover;
   height: 20rem;
+  width: 100%;
   background-blend-mode: screen;
   border-bottom: 2px solid $grey-light-2;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .dev {
