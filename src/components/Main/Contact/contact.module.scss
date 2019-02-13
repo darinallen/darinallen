@@ -23,7 +23,9 @@
 .overlay {
   background-size: cover;
   background-position: center;
-  transition: 1s;
+  backface-visibility: hidden;
+  -webkit-transition: background-image 1s ease-in-out;
+  transition: background-image 1s ease-in-out;
 }
 
 .contactInner {
